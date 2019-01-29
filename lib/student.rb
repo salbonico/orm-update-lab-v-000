@@ -42,7 +42,16 @@ DB[:conn].execute(sql,@name,@grade)
 end
 end
 
+def update
+sql = <<-SQL
+UPDATE students
+SET name = ?, grade = ?
+WHERE id = ?;
+SQL
 
+
+
+end
 
 
 end
