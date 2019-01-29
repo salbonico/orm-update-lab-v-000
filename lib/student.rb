@@ -18,7 +18,9 @@ CREAT TABLE IF NOT EXIST students(
   name TEXT,
   grade INTEGER
 )
+SQL
 
+DB[:conn].execute(sql)
 
 end
 
